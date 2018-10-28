@@ -2,4 +2,5 @@
 
 joke.sh &
 
+echo $@
 $@
