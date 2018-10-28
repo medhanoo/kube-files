@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: apache
+  labels:
+    app: apache
+spec:
+  containers:
+  - name: web
+    image: xdhanu/kpod:apache
+    ports:
+    - containerPort: 80
+      name: web
