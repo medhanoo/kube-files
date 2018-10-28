@@ -6,4 +6,4 @@ RUN chmod a+x /bin/joke.sh /bin/entrypoint.sh && \
 	  apt-get remove --purge --auto-remove -y apt-transport-https ca-certificates && rm -rf /var/lib/apt/lists/* && \
 	  wget --no-check-certificate -O /bin/tini https://github.com/krallin/tini/releases/download/v0.18.0/tini-amd64 && chmod a+x /bin/tini
 ENTRYPOINT [ "/bin/tini", "--", "/bin/entrypoint.sh" ]
-CMD "nginx -g daemon off;"
+CMD [ "nginx", "-g", "daemon off;" ]
