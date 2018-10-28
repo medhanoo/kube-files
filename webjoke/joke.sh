@@ -31,4 +31,4 @@ div {
 </body>
 </html>
 " > /usr/share/nginx/html/index.html
-
+done
