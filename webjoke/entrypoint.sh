@@ -1,5 +1,5 @@
-#!/bin/sh
+#!/bin/bash
 
-/bin/sh /bin/joke.sh &
+/bin/joke.sh &
 
 $@
