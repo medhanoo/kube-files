@@ -1,5 +1,5 @@
 #!/bin/bash
 
-/bin/joke.sh &
+joke.sh &
 
 $@
