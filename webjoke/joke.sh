@@ -3,7 +3,7 @@
 while true
 do
 	sleep 0.6
-	joke=`wget --header "Accept: application/json" -qO- https://icanhazdadjoke.com/ | grep joke | cut -f2 -d ':'`
+	joke=`wget --no-check-certificate --header "Accept: application/json" -qO- https://icanhazdadjoke.com/ | grep joke | cut -f2 -d ':'`
 	echo "
 	
 <!DOCTYPE html>
